@@ -31,3 +31,11 @@ class DiskPageLocators:
     ACCOUNT = (By.CSS_SELECTOR, '[aria-label="Аккаунт"]')
     BUTTON_EXIT = (By.CSS_SELECTOR, '[aria-label="Выйти из аккаунта"]')
     ALERT = (By.CSS_SELECTOR, '.operations-progress')
+
+
+class Settings:
+    FILE = 'Файл для копирования'
+    FOLDER = 'Files'
+    URL = 'http://yandex.ru'
+    LOGIN = 'QASimbirSoft'
+    PASSWORD = 'qwe123QWE!!'

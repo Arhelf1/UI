@@ -6,6 +6,9 @@ from selenium.webdriver import ActionChains
 
 class DiskPage(BasePage):
 
+    def __init__(self, *args, **kwargs):
+        super(DiskPage, self).__init__(*args, **kwargs)
+
     def click_button_copy_menu_all(self):
         button_copy_all = self.browser.find_element(
             *DiskPageLocators.BUTTON_COPY_MENU_ALL)

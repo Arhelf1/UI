@@ -1,6 +1,6 @@
 #AutoTest UI SimbirSoft QA 
 
-Запуск из корневой папки проекта командой "py -m pytest test_main_page.py"
+Запуск из корневой папки проекта командой "py -m pytest main.py"
  
 Требования.
 1. На языке программирования Java или Python (версия на ваш выбор) создать проект API

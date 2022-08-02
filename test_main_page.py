@@ -14,7 +14,7 @@ def test_copy_file_to_folder(browser):
     page.go_to_login_page()
     login_page = LoginPage(browser, browser.current_url)
     login_page.auth_user(login, password)
-    login_page.go_to_disk_page()
+    page.go_to_disk_page()
     disk_page = DiskPage(browser, browser.current_url)
     disk_page.copy_file(file, folder)
     disk_page.open_folder(folder)

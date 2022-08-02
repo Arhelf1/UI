@@ -1,9 +1,15 @@
 from .base_page import BasePage
-from selenium.webdriver.common.by import By
-import time
+from .locators import BasePageLocators
 
 
 class MainPage(BasePage):
 
-    def should_be_login_link(self):
-        time.sleep(1)
+    def go_to_login_page(self):
+        """go to authorization page"""
+        link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
+        link.click()
+
+    def go_to_disk_page(self):
+        """go to yandex disk page"""
+        link = self.browser.find_element(*BasePageLocators.DISK_LINK)
+        link.click()
